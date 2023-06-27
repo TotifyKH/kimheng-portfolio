@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from './components/Navbar';
+import Landing from "./components/Landing";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="app bg-dark-blue">
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+      <Landing setSelectedPage={setSelectedPage} />
     </div>
   )
 }
