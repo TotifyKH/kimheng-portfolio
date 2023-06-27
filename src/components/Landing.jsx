@@ -8,7 +8,7 @@ import Duck from '../assets/duck.gif';
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [text] = useTypewriter({
-    words: ['a Software Engineer', 'a Full Stack Web Developer', 'Challenger'],
+    words: ['a Software Engineer', 'a Full Stack Web Developer', 'excited to Learn'],
     loop: {},
   })
   return (
@@ -20,12 +20,15 @@ const Landing = ({ setSelectedPage }) => {
             <img className="rounded-full" src={Duck}></img>
           </div>
         ) : (
-          <div></div>
+          <div className="relative flex justify-center item-center overflow-hidden">
+            <img className="rounded-full" src={Duck}></img>
+          </div>
         )}
       </div>
       {/* LEFT SIDE */}
-      <div className="flex justify-center item-center z-30 basis-2/4 mt-12 md:mt-32">
+      <div className="flex justify-center z-30 basis-2/4 mt-12 md:mt-32">
         <motion.div
+          className="flex flex-col md:justify-start md:items-start justify-center items-center z-30"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -35,19 +38,19 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start md:mt-[100px]">
+          <p className="md:text-6xl text-4xl font-playfair z-10 text-center md:text-start md:mt-[100px]">
             Hi, I'm {""}
             <span className="xs:relative font-semibold text-yellow z-20">
               Kimheng
             </span>
           </p>
-          <p className="text-2xl font-poppins mt-1">I am {""}
+          <p className="md:text-2xl text-xl md:text-start text-center font-poppins ">I am {""}
             <span>
               {text}
             </span>
             <Cursor />
           </p> 
-          <button className="text-xl font-poppins text-center p-2 bg-yellow text-dark-blue rounded-full mt-3">
+          <button className="md:text-xl text-lg font-poppins text-center p-2 bg-yellow text-dark-blue rounded-full mt-3">
             Contact Me
           </button>
           

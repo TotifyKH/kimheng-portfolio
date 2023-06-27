@@ -22,6 +22,8 @@ export default {
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
           "gradient-custom-1":
           'linear-gradient(80deg,  #160729 10%, #050816 60%)',
+          "gradient-custom-2":
+          'linear-gradient(110deg,  #160729 10%, #050816 60%)',
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
