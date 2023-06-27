@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -524,16 +524,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
 
 .relative{
   position: relative;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .bottom-0{
@@ -544,12 +544,24 @@ video {
   right: 0px;
 }
 
-.z-40{
-  z-index: 40;
+.top-0{
+  top: 0px;
 }
 
 .z-10{
   z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.z-40{
+  z-index: 40;
 }
 
 .mx-auto{
@@ -561,20 +573,32 @@ video {
   margin-left: 33%;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-16{
   margin-top: 4rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .flex{
   display: flex;
 }
 
-.h-full{
-  height: 100%;
+.hidden{
+  display: none;
 }
 
-.w-full{
-  width: 100%;
+.h-full{
+  height: 100%;
 }
 
 .w-5\/6{
@@ -585,8 +609,12 @@ video {
   width: 300px;
 }
 
-.basis-3\/5{
-  flex-basis: 60%;
+.w-full{
+  width: 100%;
+}
+
+.basis-2\/4{
+  flex-basis: 50%;
 }
 
 .resize{
@@ -613,38 +641,20 @@ video {
   justify-content: space-between;
 }
 
-.gap-16{
-  gap: 4rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
 .gap-10{
   gap: 2.5rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-full{
   border-radius: 9999px;
-}
-
-.border{
-  border-width: 1px;
-}
-
-.border-2{
-  border-width: 2px;
-}
-
-.bg-dark-blue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 8 22 / var(--tw-bg-opacity));
-}
-
-.bg-red{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 68 146 / var(--tw-bg-opacity));
 }
 
 .bg-blue{
@@ -652,8 +662,18 @@ video {
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
 }
 
-.p-2{
-  padding: 0.5rem;
+.bg-dark-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 8 22 / var(--tw-bg-opacity));
+}
+
+.bg-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 204 73 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-custom-1{
+  background-image: linear-gradient(80deg,  #160729 10%, #050816 60%);
 }
 
 .p-1{
@@ -664,14 +684,8 @@ video {
   padding: 3rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.p-2{
+  padding: 0.5rem;
 }
 
 .py-10{
@@ -679,22 +693,25 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.font-playfair{
-  font-family: Playfair Display, serif;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-opensans{
   font-family: Open Sans, sans-serif;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-playfair{
+  font-family: Playfair Display, serif;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.font-poppins{
+  font-family: Poppins, sans-serif;
 }
 
 .text-2xl{
@@ -702,12 +719,38 @@ video {
   line-height: 2rem;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.text-dark-blue{
+  --tw-text-opacity: 1;
+  color: rgb(5 8 22 / var(--tw-text-opacity));
+}
+
+.text-deep-blue{
+  --tw-text-opacity: 1;
+  color: rgb(1 0 38 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -718,11 +761,6 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
-}
-
-.text-deep-blue{
-  --tw-text-opacity: 1;
-  color: rgb(1 0 38 / var(--tw-text-opacity));
 }
 
 .transition{
@@ -752,13 +790,27 @@ body,
   color: rgb(253 204 73 / var(--tw-text-opacity));
 }
 
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
   }
 
+  .md\:mt-16{
+    margin-top: 4rem;
+  }
+
   .md\:mt-32{
     margin-top: 8rem;
+  }
+
+  .md\:mt-\[100px\]{
+    margin-top: 100px;
   }
 
   .md\:flex{
@@ -769,7 +821,11 @@ body,
     height: 100%;
   }
 
-  .md\:justify-between{
-    justify-content: space-between;
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 }
