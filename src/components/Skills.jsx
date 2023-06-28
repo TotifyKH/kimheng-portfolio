@@ -38,6 +38,7 @@ const Skills = () => {
   return (
     <section id='skills' className="flex flex-col justify-start md:h-full py-10 px-16 md:px-32 bg-gradient-custom-2">
       <motion.div
+      className="md:basis-1/3"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
