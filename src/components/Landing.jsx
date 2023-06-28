@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
       {/* LEFT SIDE */}
-      <div className="flex justify-center z-30 basis-2/4 mt-12 md:mt-32">
+      <div className="flex justify-center items-center z-30 basis-2/4 ">
         <motion.div
           className="flex flex-col md:justify-start md:items-start justify-center items-center z-30"
           initial="hidden"
@@ -38,21 +38,26 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <p className="md:text-6xl text-4xl font-playfair z-10 text-center md:text-start md:mt-[100px]">
+          <p className="md:text-6xl text-4xl font-playfair z-10 text-center md:text-start md:mt-[50px]">
             Hi, I'm {""}
             <span className="xs:relative font-semibold text-yellow z-20">
-             Kimheng
+              Kimheng
             </span>
           </p>
-          <p className="md:text-xl text-md md:text-start text-center ">&lt;p&gt;I am {""}
+          <p className="md:text-xl text-md md:text-start mt-1 text-center ">&lt;p&gt;I am {""}
             <span>
               {text}
             </span>
             <Cursor /> &lt;&#92;p&gt;
-          </p> 
-          <button className="md:text-xl text-lg font-poppins text-center p-2 bg-yellow text-dark-blue rounded-full mt-3">
-            Contact Me
-          </button>
+          </p>
+          <div className="flex items-center">
+            <button className="text-lg font-poppins text-center p-2 rounded-l-lg bg-yellow border-2 border-yellow text-dark-blue mt-3 hover:scale-110 transition-all duration-300">
+              Contact Me
+            </button>
+            <button className="text-lg font-poppins text-center p-2 rounded-r-lg border-2 border-yellow text-white mt-3 hover:scale-110 hover:translate-x-2.5 transition-all duration-300">
+              Download my Resume
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>

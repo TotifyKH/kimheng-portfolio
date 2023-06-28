@@ -38,6 +38,7 @@ const Skills = () => {
   return (
     <section id='skills' className="flex flex-col justify-start md:h-full py-10 px-16 md:px-32 bg-gradient-custom-2">
       <motion.div
+      className="md:basis-1/3"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
@@ -53,61 +54,60 @@ const Skills = () => {
       </motion.div>
 
 
-      <div className=''>
-        <motion.div
-          className="flex md:flex-row flex-col justify-center mt-8 gap-10 list-none"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.4 } : { amount: 0.1 }) }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          variants={list}
-        >
-          <motion.li className='md:basis-1/4 text-center rounded-md h-[300px] bg-gradient-rainblue-2 p-0.5' variants={item}>
-            <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
-              <img className='my-5' src={ProgrammingIcon} width={80}></img>
-              <p className='text-yellow font-poppins mb-2'>Programming Language</p>
-              <div className='flex flex-row flex-wrap justify-center'>
-                {programmingLanguages.map((language, index) => (
-                  <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
-                ))}
-              </div>
+      <motion.div
+        className="flex md:flex-row flex-col justify-center mt-8 gap-10 list-none"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.4 } : { amount: 0.1 }) }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        variants={list}
+      >
+        <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+          <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
+            <img className='my-5' src={ProgrammingIcon} width={80}></img>
+            <p className='text-yellow font-poppins mb-2'>Programming Language</p>
+            <div className='flex flex-row flex-wrap justify-center'>
+              {programmingLanguages.map((language, index) => (
+                <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
+              ))}
             </div>
-          </motion.li>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-[300px] bg-gradient-rainblue-2 p-0.5' variants={item}>
-            <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
-              <img className='my-5' src={FrontendIcon} width={80}></img>
-              <p className='text-yellow font-poppins mb-2'>Frontend Development</p>
-              <div className='flex flex-row flex-wrap justify-center'>
-                {frontend.map((language, index) => (
-                  <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
-                ))}
-              </div>
+          </div>
+        </motion.li>
+        <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+          <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
+            <img className='my-5' src={FrontendIcon} width={80}></img>
+            <p className='text-yellow font-poppins mb-2'>Frontend Development</p>
+            <div className='flex flex-row flex-wrap justify-center'>
+              {frontend.map((language, index) => (
+                <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
+              ))}
             </div>
-          </motion.li>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-[300px] bg-gradient-rainblue-2 p-0.5' variants={item}>
-            <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
-              <img className='my-5' src={BackendIcon} width={80}></img>
-              <p className='text-yellow font-poppins mb-2'>Backend Development</p>
-              <div className='flex flex-row flex-wrap justify-center'>
-                {backend.map((language, index) => (
-                  <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
-                ))}
-              </div>
+          </div>
+        </motion.li>
+        <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+          <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
+            <img className='my-5' src={BackendIcon} width={80}></img>
+            <p className='text-yellow font-poppins mb-2'>Backend Development</p>
+            <div className='flex flex-row flex-wrap justify-center'>
+              {backend.map((language, index) => (
+                <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
+              ))}
             </div>
-          </motion.li>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-[300px] bg-gradient-rainblue-2 p-0.5' variants={item}>
-            <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
-              <img className='my-5' src={EmbeddedIcon} width={80}></img>
-              <p className='text-yellow font-poppins mb-2'>Embedded Programming</p>
-              <div className='flex flex-row flex-wrap justify-center'>
-                {embedded.map((language, index) => (
-                  <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
-                ))}
-              </div>
+          </div>
+        </motion.li>
+        <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+          <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
+            <img className='my-5' src={EmbeddedIcon} width={80}></img>
+            <p className='text-yellow font-poppins mb-2'>Embedded Programming</p>
+            <div className='flex flex-row flex-wrap justify-center'>
+              {embedded.map((language, index) => (
+                <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
+              ))}
             </div>
-          </motion.li>
-        </motion.div>
-      </div>
+          </div>
+        </motion.li>
+      </motion.div>
+
     </section>
   )
 }
