@@ -4,6 +4,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -23,7 +24,10 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   return (
     <nav className='z-40 w-full fixed top-0 py-6 bg-gradient-custom-1'>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bol">KP | Portfolio</h4>
+        <AnchorLink 
+        href={`#${'home'}`}
+        onClick={() => setSelectedPage('home')}>
+        <h4 className="font-playfair text-3xl font-bol">KP | Portfolio</h4></AnchorLink>
         {isAboveSmallScreens ? (
           <div className='flex justify-between gap-16 font-opensans text-sm font-semibold'>
             <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
