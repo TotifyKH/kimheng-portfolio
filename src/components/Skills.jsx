@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 import ProgrammingIcon from '../assets/programming.png';
 import FrontendIcon from '../assets/frontend.png';
 import BackendIcon from '../assets/backend.png';
-import EmbeddedIcon from '../assets/embedded.png';
+import DeploymentIcon from '../assets/deployment.png';
 import { Tilt } from 'react-tilt';
 
 const Skills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const programmingLanguages = ['C', 'C++', 'Java', 'Python', 'JavaScript'];
   const frontend = ['HTML', 'CSS', 'React.js', 'Redux', 'TailwindCSS', 'MUI', 'Vite'];
-  const backend = ['Node.js', 'Express.js', 'SocketIO', 'AWS', 'MongoDB', 'MySQL', 'PostgreSQL'];
-  const embedded = ['Raspberry Pi', 'C', 'Python'];
+  const backend = ['Node.js', 'Express.js', 'SocketIO', 'MongoDB', 'MySQL', 'PostgreSQL'];
+  const deployment = ['AWS','Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx'];
   const list = {
     visible: {
       opacity: 1,
@@ -117,10 +117,10 @@ const Skills = () => {
         <Tilt className="md:basis-1/4  h-80" options={defaultOptions}>
           <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
-              <img className='my-5' src={EmbeddedIcon} width={80}></img>
-              <p className='text-yellow font-poppins mb-2'>Embedded Programming</p>
+              <img className='my-5' src={DeploymentIcon} width={105}></img>
+              <p className='text-yellow font-poppins mb-2'>Deployment</p>
               <div className='flex flex-row flex-wrap justify-center'>
-                {embedded.map((language, index) => (
+                {deployment.map((language, index) => (
                   <div className=" border-2 m-1 py-1 px-3 rounded-full" key={index}>{language} {''}</div>
                 ))}
               </div>
