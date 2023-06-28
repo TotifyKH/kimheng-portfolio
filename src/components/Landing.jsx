@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
       {/* LEFT SIDE */}
-      <div className="flex justify-center z-30 basis-2/4 mt-12 md:mt-32">
+      <div className="flex justify-center items-center z-30 basis-2/4 ">
         <motion.div
           className="flex flex-col md:justify-start md:items-start justify-center items-center z-30"
           initial="hidden"
