@@ -13,7 +13,7 @@ export default {
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
-        "neon-purple": "#FF00FF",
+        "dark-purple": "#160729",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -24,6 +24,8 @@ export default {
           'linear-gradient(80deg,  #160729 10%, #050816 60%)',
           "gradient-custom-2":
           'linear-gradient(110deg,  #160729 10%, #050816 60%)',
+          "gradient-rainblue-2":
+          "linear-gradient(45deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
