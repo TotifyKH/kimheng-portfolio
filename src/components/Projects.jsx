@@ -4,8 +4,12 @@ import { useRef } from 'react';
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import BreakingBread from '../assets/breaking-bread.jpg';
 import Nodefit from '../assets/nodefit.png';
+import Poker from '../assets/poker.png';
 
 const Projects = ({ setSelectedPage }) => {
+  const breakingBreadHashTag = ['React', 'MongoDB', 'Express', 'Amplify'];
+  const nodefitHashTag = ['React','Express','MySQL','AWS-EC2'];
+  const pokerHashTag = ['Handlebars','SocketIO','PostgresSQL'];
   const domRef = useRef();
   //use Intersection Observer hook to change page state when scrolled into view
   const handleIntersection = () => {
@@ -22,23 +26,35 @@ const Projects = ({ setSelectedPage }) => {
         <div className='flex flex-col md:flex-row h-[22rem] my-3 gap-16'>
           <div className="flex flex-col items-center h-full min-h-full w-80 border-2 rounded-md border-blue">
             <img className="rounded-t-md py-2 px-2" src={BreakingBread}></img>
-            <div className='basis-1/2 flex flex-col justify-start px-10 py-5'>
-              <p className='text-lg text-yellow font-poppins mb-2'>Breaking Bread - MERN Stack Bakery Web App</p>
-              <button className='bg-yellow p-1 text-dark-blue'>Learn More</button>
+            <div className='basis-1/2 flex flex-col justify-start px-4 py-5'>
+              <p className='text-lg  font-poppins mb-2'><span className='text-yellow'>Breaking Bread</span> - MERN Stack Bakery Web App</p>
+              <div className='flex flex-row flex-wrap justify-start mt-4'>
+                {breakingBreadHashTag.map((language, index) => (
+                  <div className="text-xs text-blue border-blue border-1 m-0.5 py-0.5 px-1 rounded-full" key={index}>{'#'}{language} {''}</div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="flex flex-col items-center h-full min-h-full w-80 border-2 rounded-md border-blue">
             <img className="rounded-t-md py-2 px-2" src={Nodefit}></img>
-            <div className='basis-1/2 flex flex-col justify-start px-10 py-5'>
-              <p className='text-lg text-yellow font-poppins mb-2'>Nodefit - Full Stack Fitness Web App</p>
-              <button className='bg-yellow p-1 text-dark-blue'>Learn More</button>
+            <div className='basis-1/2 flex flex-col justify-start px-4 py-5'>
+              <p className='text-lg font-poppins mb-2'><span className='text-yellow'>Nodefit</span> - Full Stack React Fitness App</p>
+              <div className='flex flex-row flex-wrap justify-start mt-4'>
+                {nodefitHashTag.map((language, index) => (
+                  <div className="text-xs text-blue border-blue border-1 m-0.5 py-0.5 px-1 rounded-full" key={index}>{'#'}{language} {''}</div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="flex flex-col items-center h-full min-h-full w-80 border-2 rounded-md border-blue">
-            <img className="rounded-t-md py-2 px-2" src={BreakingBread}></img>
-            <div className='basis-1/2 flex flex-col justify-start px-10 py-5'>
-              <p className='text-lg text-yellow font-poppins mb-2'>Breaking Bread - Full Stack Bakery Web App</p>
-              <button className='bg-yellow p-1 text-dark-blue'>Learn More</button>
+            <img className="rounded-t-md py-2 px-2" src={Poker}></img>
+            <div className='basis-1/2 flex flex-col justify-start px-4 py-5'>
+              <p className='text-lg font-poppins mb-2'><span className='text-yellow'>Texas Holdem Poker</span> - Multiplayer Poker Web App</p>
+              <div className='flex flex-row flex-wrap justify-start mt-4'>
+                {pokerHashTag.map((language, index) => (
+                  <div className="text-xs text-blue border-blue border-1 m-0.5 py-0.5 px-1 rounded-full" key={index}>{'#'}{language} {''}</div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

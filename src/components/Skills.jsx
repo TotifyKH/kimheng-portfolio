@@ -14,7 +14,7 @@ const Skills = ({ setSelectedPage }) => {
   const programmingLanguages = ['C', 'C++', 'Java', 'Python', 'JavaScript'];
   const frontend = ['HTML', 'CSS', 'React.js', 'Redux', 'TailwindCSS', 'MUI', 'Vite'];
   const backend = ['Node.js', 'Express.js', 'SocketIO', 'MongoDB', 'MySQL', 'PostgreSQL'];
-  const deployment = ['AWS', 'Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx', 'Vercel'];
+  const deployment = ['AWS', 'Amplify', 'EC2', 'RDS', 'Route 53','S3', 'Nginx', 'Vercel'];
   const list = {
     visible: {
       opacity: 1,
