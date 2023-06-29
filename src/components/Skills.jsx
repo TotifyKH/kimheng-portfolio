@@ -11,7 +11,7 @@ const Skills = () => {
   const programmingLanguages = ['C', 'C++', 'Java', 'Python', 'JavaScript'];
   const frontend = ['HTML', 'CSS', 'React.js', 'Redux', 'TailwindCSS', 'MUI', 'Vite'];
   const backend = ['Node.js', 'Express.js', 'SocketIO', 'MongoDB', 'MySQL', 'PostgreSQL'];
-  const deployment = ['AWS','Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx'];
+  const deployment = ['AWS','Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx', 'Vercel'];
   const list = {
     visible: {
       opacity: 1,
@@ -75,7 +75,7 @@ const Skills = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         variants={list}
       >
-        <Tilt className="md:basis-1/4  h-80" options={defaultOptions}>
+        <Tilt className="md:basis-1/4 h-80 rounded-md" options={defaultOptions}>
           <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={ProgrammingIcon} width={80}></img>
@@ -88,7 +88,7 @@ const Skills = () => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80" options={defaultOptions}>
+        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
           <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={FrontendIcon} width={80}></img>
@@ -101,7 +101,7 @@ const Skills = () => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80" options={defaultOptions}>
+        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
           <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={BackendIcon} width={80}></img>
@@ -114,7 +114,7 @@ const Skills = () => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80" options={defaultOptions}>
+        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
           <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={DeploymentIcon} width={105}></img>
