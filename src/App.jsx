@@ -13,8 +13,8 @@ function App() {
     <div className="app bg-dark-blue">
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Landing setSelectedPage={setSelectedPage} />
-      <Skills />
-      <Projects/>
+      <Skills setSelectedPage={setSelectedPage} />
+      <Projects setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

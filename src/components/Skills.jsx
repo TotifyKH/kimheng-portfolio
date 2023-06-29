@@ -5,13 +5,16 @@ import FrontendIcon from '../assets/frontend.png';
 import BackendIcon from '../assets/backend.png';
 import DeploymentIcon from '../assets/deployment.png';
 import { Tilt } from 'react-tilt';
+import { useRef } from 'react';
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
-const Skills = () => {
+const Skills = ({ setSelectedPage }) => {
+  const domRef = useRef();
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const programmingLanguages = ['C', 'C++', 'Java', 'Python', 'JavaScript'];
   const frontend = ['HTML', 'CSS', 'React.js', 'Redux', 'TailwindCSS', 'MUI', 'Vite'];
   const backend = ['Node.js', 'Express.js', 'SocketIO', 'MongoDB', 'MySQL', 'PostgreSQL'];
-  const deployment = ['AWS','Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx', 'Vercel'];
+  const deployment = ['AWS', 'Amplify', 'EC2', 'RDS', 'Route 53', 'Nginx', 'Vercel'];
   const list = {
     visible: {
       opacity: 1,
@@ -47,9 +50,17 @@ const Skills = () => {
     easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   }
 
+  //use Intersection Observer hook to change page state when scrolled into view
+  const handleIntersection = () => {
+    console.log("Skills Visible");
+    setSelectedPage('skills');
+  };
+  useIntersectionObserver(domRef, 0.6, handleIntersection);
+
+
 
   return (
-    <section id='skills' className="flex flex-col justify-start md:h-full py-10 px-16 md:px-32 bg-gradient-custom-2">
+    <section id='skills' className="flex flex-col justify-start md:h-full py-10 px-16 md:px-32 bg-gradient-custom-2" ref={domRef}>
       <motion.div
         className="md:basis-1/3"
         initial="hidden"

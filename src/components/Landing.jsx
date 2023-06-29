@@ -4,15 +4,28 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Mario from '../assets/mario-coding.gif';
 import Duck from '../assets/duck.gif';
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import { useRef } from "react";
 
 const Landing = ({ setSelectedPage }) => {
+  const domRef = useRef();
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [text] = useTypewriter({
     words: ['a Software Engineer', 'a Full Stack Web Developer', 'excited to Learn'],
     loop: {},
   })
+
+  //use Intersection Observer hook to change page state when scrolled into view
+  const handleIntersection = () => {
+    console.log("Home Visible");
+    setSelectedPage('home');
+  };
+
+  useIntersectionObserver(domRef, 0.6, handleIntersection);
+
+
   return (
-    <section id='home' className="md:flex md:justify-center md:item-center md:h-full py-10 bg-gradient-custom-1">
+    <section id='home' className="md:flex md:justify-center md:item-center md:h-full py-10 bg-gradient-custom-1" ref={domRef}>
       {/* RIGHT SIDE */}
       <div className="md:order-2 flex justify-center basis-2/4 z-10 mt-16 md:mt-16">
         {isAboveMediumScreens ? (
