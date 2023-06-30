@@ -11,11 +11,14 @@ export default {
         yellow: "#FDCC49",
         grey: "#EDEDED",
         pink: "#FF45A4",
-        purple: "#b042ff",
+        purple: "#3d1761",
+        green: "#24a11d",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
         "dark-purple": "#160729",
+        "light-purple": "#050816",
+        skin: "#ba864e",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
