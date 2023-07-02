@@ -5,6 +5,7 @@ import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import BreakingBread from '../assets/breaking-bread.jpg';
 import Nodefit from '../assets/nodefit.png';
 import Poker from '../assets/poker.png';
+import Car from '../assets/car.png';
 
 const Projects = ({ setSelectedPage }) => {
   const breakingBreadHashTag = ['React', 'MongoDB', 'Express', 'Amplify'];
@@ -76,7 +77,7 @@ const Projects = ({ setSelectedPage }) => {
         <div className='flex flex-col md:flex-row min-h-[20rem] my-3 gap-10'>
           <div className=" flex flex-col items-center h-[20rem] min-h-full w-[21rem] border-2 rounded-xl border-yellow hover:scale-105 transition-transform hover:cursor-pointer">
             <div className="rounded-xl m-5 mb-3">
-              <img className="rounded-xl" src={BreakingBread}></img>
+              <img className="rounded-xl" src={Car}></img>
             </div>
 
             <div className='basis-1/2 flex flex-col justify-start px-5 '>
