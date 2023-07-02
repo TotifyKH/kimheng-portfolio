@@ -73,7 +73,7 @@ const Skills = ({ setSelectedPage }) => {
         }}
       >
         <h1 className="text-3xl font-poppins mt-20">Intro<span className='text-yellow'>duck</span>tion && <span className='text-yellow'>Skills</span></h1>
-        <p className="text-lg font-poppins text-dark-grey mt-3">I am a passionate Software Engineer with expertise in JavaScript and experience working with React.js, Node.js, Express.js, and various AWS services. I am enthusiastic about leveraging my technical skills to collaborate with teams, assisting clients in developing practical solutions for real-world problems.
+        <p className="text-lg font-poppins text-dark-grey mt-3">I am a passionate Software Engineer with expertise in JavaScript and experience working with React.js, Node.js, Express.js, and various Amazon Web Services. I am enthusiastic about leveraging my technical skills to collaborate with teams, assisting clients in developing practical solutions for real-world problems.
         </p>
       </motion.div>
 

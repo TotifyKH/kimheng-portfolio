@@ -7,6 +7,7 @@ import Nodefit from '../assets/nodefit.png';
 import Poker from '../assets/poker.png';
 import Car from '../assets/car.png';
 import PhotoApp from '../assets/photo-app.png';
+import FileSystem from '../assets/file-system.png';
 
 const Projects = ({ setSelectedPage }) => {
   const breakingBreadHashTag = ['React', 'MongoDB', 'AWS-S3', 'Amplify'];
@@ -14,6 +15,7 @@ const Projects = ({ setSelectedPage }) => {
   const pokerHashTag = ['Handlebars', 'SocketIO', 'PostgresSQL'];
   const carHashTag = ['Raspberry Pi', 'C', 'Multi-Threads', 'Embedded'];
   const photoHashTag = ['First-Web-App', 'Handblebars', 'Express', 'MySQL'];
+  const fileSystemHashTag = ['C', 'Extent-Table', 'Ubuntu', 'Process'];
 
   const domRef = useRef();
   //use Intersection Observer hook to change page state when scrolled into view
@@ -111,13 +113,13 @@ const Projects = ({ setSelectedPage }) => {
           </div>
           <div className="flex flex-col items-center h-[20rem] min-h-full w-[21rem] border-2 rounded-xl border-yellow hover:scale-105 transition-transform hover:cursor-pointer">
             <div className="rounded-xl m-5 mb-3">
-              <img className="rounded-xl" src={Poker}></img>
+              <img className="rounded-xl" src={FileSystem}></img>
             </div>
 
             <div className='basis-1/2 flex flex-col justify-start px-5'>
-              <p className='text-lg font-poppins'><span className='text-yellow'>Texas Holdem Poker</span> - Multiplayer Poker Web App</p>
+              <p className='text-lg font-poppins'><span className='text-yellow'>Linux File System</span> - File System Utilizing BitMap and Extent</p>
               <div className='flex flex-row flex-wrap justify-start text-start'>
-                {pokerHashTag.map((language, index) => (
+                {fileSystemHashTag.map((language, index) => (
                   <div className="text-xs text-green m-0.5 py-0.5 pr-1 rounded-full" key={index}>{'#'}{language} {''}</div>
                 ))}
               </div>
