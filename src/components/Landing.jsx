@@ -64,7 +64,9 @@ const Landing = ({ setSelectedPage }) => {
             <Cursor /> &lt;&#92;p&gt;
           </p>
           <div className="flex items-center">
-            <button className="text-lg font-poppins text-center p-2 rounded-l-lg bg-yellow border-2 border-yellow text-dark-blue mt-3 hover:scale-110 transition-all duration-300">
+            <button className="text-lg font-poppins text-center p-2 rounded-l-lg bg-yellow border-2 border-yellow text-dark-blue mt-3 hover:scale-110 transition-all duration-300"
+              onClick={() => setSelectedPage('contact')}
+            >
               Contact Me
             </button>
             <button className="text-lg font-poppins text-center p-2 rounded-r-lg border-2 border-yellow text-white mt-3 hover:scale-110 hover:translate-x-2.5 transition-all duration-300">
