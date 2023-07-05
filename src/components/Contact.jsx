@@ -19,7 +19,7 @@ const Contact = ({ setSelectedPage }) => {
     <section id='contact' className="flex justify-center items-center md:h-full w-full py-10 bg-gradient-custom-2" ref={domRef}>
       <div className="flex flex-col md:flex-row items-center justify-center mt-10 p-1 bg-gradient-rainblue-2 rounded-md">
         <div className="flex flex-col w-80 md:h-[35rem] items-start pl-10 bg-dark-purple md:rounded-l-md p-2">
-          <p className="text-2xl mt-20 mb-6 font-poppins">Contact Info</p>
+          <p className="text-2xl mt-20 mb-6 font-poppins"><span className="text-yellow">Contact</span> Info</p>
           <p className="text-md mt-6 font-poppins">kimhengpengkh@gmail.com</p>
           <p className="text-md mt-6 font-poppins">+1 (650) 438-7983</p>
           <p className="text-md mt-6 font-poppins">San Francisco, CA</p>
