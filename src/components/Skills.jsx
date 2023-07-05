@@ -52,9 +52,9 @@ const Skills = ({ setSelectedPage }) => {
 
   //use Intersection Observer hook to change page state when scrolled into view
   const handleIntersection = () => {
-    console.log("Skills Visible");
     setSelectedPage('skills');
   };
+
   useIntersectionObserver(domRef, 0.6, handleIntersection);
 
 
@@ -86,8 +86,8 @@ const Skills = ({ setSelectedPage }) => {
         transition={{ duration: 1, ease: "easeOut" }}
         variants={list}
       >
-        <Tilt className="md:basis-1/4 h-80 rounded-md" options={defaultOptions}>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+        <Tilt className="md:basis-1/4 h-[21rem] rounded-md" options={defaultOptions}>
+          <motion.li className='md:basis-1/4 text-center rounded-md h-[21rem] bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={ProgrammingIcon} width={80}></img>
               <p className='text-yellow font-poppins mb-2'>Programming Language</p>
@@ -99,8 +99,8 @@ const Skills = ({ setSelectedPage }) => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+        <Tilt className="md:basis-1/4  h-[21rem] rounded-md" options={defaultOptions}>
+          <motion.li className='md:basis-1/4 text-center rounded-md h-[21rem] bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={FrontendIcon} width={80}></img>
               <p className='text-yellow font-poppins mb-2'>Frontend Development</p>
@@ -112,8 +112,8 @@ const Skills = ({ setSelectedPage }) => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+        <Tilt className="md:basis-1/4  h-[21rem] rounded-md" options={defaultOptions}>
+          <motion.li className='md:basis-1/4 text-center rounded-md h-[21rem] bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={BackendIcon} width={80}></img>
               <p className='text-yellow font-poppins mb-2'>Backend Development</p>
@@ -125,8 +125,8 @@ const Skills = ({ setSelectedPage }) => {
             </div>
           </motion.li>
         </Tilt>
-        <Tilt className="md:basis-1/4  h-80 rounded-md" options={defaultOptions}>
-          <motion.li className='md:basis-1/4 text-center rounded-md h-80 bg-gradient-rainblue-2 p-0.5' variants={item}>
+        <Tilt className="md:basis-1/4  h-[21rem] rounded-md" options={defaultOptions}>
+          <motion.li className='md:basis-1/4 text-center rounded-md h-[21rem] bg-gradient-rainblue-2 p-0.5' variants={item}>
             <div className="flex flex-col items-center bg-dark-purple h-full rounded-md">
               <img className='my-5' src={DeploymentIcon} width={105}></img>
               <p className='text-yellow font-poppins mb-2'>Deployment</p>

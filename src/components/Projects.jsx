@@ -20,7 +20,6 @@ const Projects = ({ setSelectedPage }) => {
   const domRef = useRef();
   //use Intersection Observer hook to change page state when scrolled into view
   const handleIntersection = () => {
-    console.log("Projects Visible");
     setSelectedPage('projects');
   };
 

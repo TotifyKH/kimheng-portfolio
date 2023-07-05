@@ -45,7 +45,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         )}
         {/* MOBILE MENU */}
         {!isAboveSmallScreens && isMenuOpen && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-dark-purple w-[300px]">
             {/* CLOSE BUTTON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -53,7 +53,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               </button>
             </div>
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
               <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page='Skills' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />

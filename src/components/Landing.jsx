@@ -2,7 +2,6 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import Mario from '../assets/mario-coding.gif';
 import Duck from '../assets/duck.gif';
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import { useRef } from "react";
@@ -17,7 +16,6 @@ const Landing = ({ setSelectedPage }) => {
 
   //use Intersection Observer hook to change page state when scrolled into view
   const handleIntersection = () => {
-    console.log("Home Visible");
     setSelectedPage('home');
   };
 
