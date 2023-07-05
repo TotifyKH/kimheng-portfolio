@@ -683,6 +683,10 @@ video {
   height: 100%;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .min-h-\[20rem\]{
   min-height: 20rem;
 }
@@ -1033,6 +1037,11 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
+}
+
+.text-deep-blue{
+  --tw-text-opacity: 1;
+  color: rgb(1 0 38 / var(--tw-text-opacity));
 }
 
 .transition{
