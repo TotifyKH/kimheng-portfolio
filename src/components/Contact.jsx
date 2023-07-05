@@ -31,7 +31,7 @@ const Contact = ({ setSelectedPage }) => {
         <div className="flex flex-col w-80 items-start pl-10 md:w-[30rem] h-[35rem] bg-dark-purple md:rounded-r-md p-1">
           <p className="text-2xl mt-20 font-poppins">Message Me</p>
           {/*USING FORMSUBMIT END POINT TO SEND EMAIL*/}
-          <form className='flex flex-col mt-6 gap-4 w-[90%]' action="https://formsubmit.co/6d51455c1cc4a2761b32bbd2e2dc6dc7" method="POST">
+          <form className='flex flex-col mt-6 gap-4 w-[90%]' action="https://formsubmit.co/orcinus47@gmail.com" method="POST">
             <input className='h-12 rounded-lg bg-dark-blue border-purple border-2 pl-3' name='Name' type="text" placeholder="Name" required/>
             <input className=' h-12 rounded-lg border-purple border-2 bg-dark-blue pl-3' name='Email' type="email" placeholder="Email" required />
             <textarea className=' h-32 rounded-lg border-purple border-2 bg-dark-blue p-3' name='Message' placeholder="Message" />
