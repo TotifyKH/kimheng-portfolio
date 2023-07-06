@@ -4,7 +4,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Duck from '../assets/duck.gif';
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import resume from '../assets/resume.pdf';
 import { useRef } from "react";
+
 
 const Landing = ({ setSelectedPage }) => {
   const domRef = useRef();
@@ -68,7 +70,16 @@ const Landing = ({ setSelectedPage }) => {
             >
               Contact Me
             </AnchorLink>
-            <button className="text-lg font-poppins text-center p-2 rounded-r-lg border-2 border-yellow text-white mt-3 hover:scale-110 hover:translate-x-2.5 transition-all duration-300">
+            {/* Click Button to Download Resume */}
+            <button 
+              className="text-lg font-poppins text-center p-2 rounded-r-lg border-2 border-yellow text-white mt-3 hover:scale-110 hover:translate-x-2.5 transition-all duration-300"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = resume;
+                link.download = "kimheng_peng_resume.pdf";
+                link.click();
+              }}
+            >
               Download my Resume
             </button>
           </div>
