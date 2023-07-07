@@ -7,7 +7,7 @@ import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 const BreakingBread = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1300px)");
   const breakingBreadHashTag = ['React', 'MongoDB', 'AWS-S3', 'Amplify'];
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -30,10 +30,11 @@ const BreakingBread = () => {
 
   const mobileStyle = {
     position: 'absolute',
-    top: '100%',
+    top: '0%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
-
+    transform: 'translate(-50%, 0)',
+    marginTop: '1rem',
+    boxShadow: 24,
   }
 
   return (
@@ -42,9 +43,9 @@ const BreakingBread = () => {
       <Modal
         open={open}
         onClose={handleClose}
-        className='overflow-auto'
+        className='overflow-auto backdrop-filter backdrop-blur-sm'
       >
-        <div style={isAboveMediumScreens ? style : mobileStyle} className='flex flex-col md:flex-row w-[90%] md:w-[60%] md:h-[80%] p-10 border-yellow border-2 bg-dark-purple rounded-xl'>
+        <div style={isAboveMediumScreens ? style : mobileStyle} className='flex flex-col md:flex-row w-[90%] md:w-[60%]  p-10 border-yellow border-2 bg-dark-purple rounded-xl outline-none'>
           <div className='flex flex-col gap-5 justify-center items-center shrink-0'>
             <img className='rounded-md border-2 border-purple' width='320px' src={breakingBreadImg} />
             <img className='rounded-md border-2 border-purple' width='320px' src={breakingBreadImg2} />
