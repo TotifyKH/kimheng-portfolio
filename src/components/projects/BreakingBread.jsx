@@ -5,6 +5,7 @@ import breakingBreadImg3 from '../../assets/breaking-bread-3.png';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const BreakingBread = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1300px)");
@@ -70,7 +71,7 @@ const BreakingBread = () => {
               <p className='mt-5 text-lg text-yellow'>Technology</p>
               <p>NodeJS, ExpressJS, MongoDB, ReactJS, Material UI, AWS S3</p>
               <p className='mt-5 text-lg text-yellow'>Link</p>
-              <a href='https://breaking-bread.kimheng-server.live' target="_blank" className="underline text-blue">https://breaking-bread.kimheng-server.live</a>
+              <a href='https://breaking-bread.kimheng-server.live' target="_blank" className="underline text-blue">https://breaking-bread.kimheng-server.live<span><OpenInNewIcon fontSize='small'/> </span></a>
             </div>
           </div>
           <CloseIcon className='hover:cursor-pointer absolute top-3 right-3 ' onClick={handleClose} />
