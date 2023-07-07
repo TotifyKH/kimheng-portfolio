@@ -23,7 +23,7 @@ const Contact = ({ setSelectedPage }) => {
           <p className="text-md mt-6 font-poppins">kimhengpengkh@gmail.com</p>
           <p className="text-md mt-6 font-poppins">+1 (650) 438-7983</p>
           <p className="text-md mt-6 font-poppins">San Francisco, CA</p>
-          <div class="flex justify-between gap-6 mt-12 mb-6">
+          <div className="flex justify-between gap-6 mt-12 mb-6">
             <a href="https://github.com/TotifyKH" target="_blank"><GitHubIcon className="hover:scale-125 transition-transform hover:cursor-pointer hover:text-yellow" /></a>
             <a href="https://www.linkedin.com/in/kimheng-peng/" target="_blank"><LinkedInIcon className="hover:scale-125 transition-transform hover:cursor-pointer hover:text-blue" /></a>
             <a href="https://instagram.com/kimheng_peng?igshid=MjEwN2IyYWYwYw==" target="_blank"><InstagramIcon className="hover:scale-125 transition-transform hover:cursor-pointer hover:text-pink" /></a>
