@@ -61,6 +61,7 @@ const Poker = () => {
                 <ul className="list-disc">
                   <li>Led the backend development of a multiplayer poker game, enabling real-time updates for players.</li>
                   <li>Implemented secure session management and authentication, enabling users to log in and play multiple games concurrently.</li>
+                  <li>Integrated a global chat and in-game chat using WebSockets, allowing players to communicate</li>
                   <li>Collaborated closely with a team of four to design and lead the implementation of game mechanics for both the front-end and back-end, encompassing card dealing, betting, and winning conditions.</li>
                   <li>Efficiently deployed the web application and database on the Render platform.</li>
                 </ul>
