@@ -1,6 +1,7 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import pokerImg from '../../assets/poker.png';
-
+import pokerImg2 from '../../assets/poker-2.png';
+import pokerImg3 from '../../assets/poker-3.png';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
@@ -47,27 +48,27 @@ const Poker = () => {
       >
         <div style={isAboveMediumScreens ? style : mobileStyle} className='flex flex-col md:flex-row w-[90%] md:w-[60%]  p-10 border-yellow border-2 bg-dark-purple rounded-xl outline-none'>
           <div className='flex flex-col gap-5 justify-center items-center shrink-0'>
-            <img className='rounded-md border-2 border-purple' width='320px' src={pokerImg} />
-            <img className='rounded-md border-2 border-purple' width='320px' src={pokerImg} />
+            <img className='rounded-md border-2 border-purple' width='320px' src={pokerImg2} />
+            <img className='rounded-md border-2 border-purple' width='320px' src={pokerImg3} />
             <img className='rounded-md border-2 border-purple' width='320px' src={pokerImg} />
           </div>
           <div className='md:ml-10 mt-5 md:mt-0  flex flex-col font-poppins justify-center'>
-            <h2 className=' text-yellow text-3xl'>Node Fit</h2>
-            <h2 className='text-xl'>A Full Stack Fitness App</h2>
+            <h2 className=' text-yellow text-3xl'>Texas Holdem Poker</h2>
+            <h2 className='text-xl'>A Multiplayer Poker Web App</h2>
             <div className='mt-4'>
               <p className='text-lg text-yellow'>Overview</p>
               <div className='pl-5'>
                 <ul className="list-disc">
-                  <li>Led the development of a workout application's backend using Express.js and deployed it on AWS.</li>
-                  <li>Implemented robust user session management for account creation, login, and workout customization.</li>
-                  <li>Collaborated effectively with a team to craft the ReactJS-based frontend, seamlessly integrating backend data.</li>
-                  <li>Gained comprehensive understanding of the software development lifecycle, encompassing documentation, testing, planning, and database design.</li>
+                  <li>Led the backend development of a multiplayer poker game, enabling real-time updates for players.</li>
+                  <li>Implemented secure session management and authentication, enabling users to log in and play multiple games concurrently.</li>
+                  <li>Collaborated closely with a team of four to design and lead the implementation of game mechanics for both the front-end and back-end, encompassing card dealing, betting, and winning conditions.</li>
+                  <li>Efficiently deployed the web application and database on the Render platform.</li>
                 </ul>
               </div>
               <p className='mt-5 text-lg text-yellow'>Technology</p>
-              <p>NodeJS, ExpressJS, MySQL, Session, AWS EC2, AWS RDS</p>
+              <p>NodeJS, ExpressJS, WebSocket, Migration, PostgresSQL, Render</p>
               <p className='mt-5 text-lg text-yellow'>Link</p>
-              <a href='https://docs.google.com/document/d/1Q_at0HnZfNOq3IssGkMxii56bL5OTIoDfD5Eu7bdmjw/edit' target="_blank" className="underline text-blue">Project Documentation<span><OpenInNewIcon fontSize='small' /> </span></a>
+              <a href='https://github.com/csc-667-fall-2022-sfsu-roberts/term-project-team-pcarkpab' target="_blank" className="underline text-blue">GitHub Repository<span><OpenInNewIcon fontSize='small' /> </span></a>
             </div>
           </div>
           <CloseIcon className='hover:cursor-pointer absolute top-3 right-3 ' onClick={handleClose} />
