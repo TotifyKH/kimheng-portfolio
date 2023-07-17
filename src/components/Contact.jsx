@@ -1,4 +1,5 @@
 import useMediaQuery from "../hooks/useMediaQuery";
+import { motion } from 'framer-motion';
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -17,7 +18,17 @@ const Contact = ({ setSelectedPage }) => {
 
   return (
     <section id='contact' className="flex justify-center items-center md:h-full w-full py-10 bg-gradient-custom-2" ref={domRef}>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-10 p-1 bg-gradient-rainblue-2 rounded-md">
+      <motion.div
+        className="flex flex-col md:flex-row items-center justify-center mt-10 p-1 bg-gradient-rainblue-2 rounded-md"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 }
+        }}
+      >
         <div className="flex flex-col w-80 md:h-[35rem] items-start pl-10 bg-dark-purple md:rounded-l-md p-2">
           <p className="text-2xl mt-20 mb-6 font-poppins"><span className="text-yellow">Contact</span> Info</p>
           <p className="text-md mt-6 font-poppins">kimhengpengkh@gmail.com</p>
@@ -33,13 +44,13 @@ const Contact = ({ setSelectedPage }) => {
           <p className="text-2xl mt-20 font-poppins">Message Me</p>
           {/*USING FORMSUBMIT END POINT TO SEND EMAIL*/}
           <form className='flex flex-col mt-6 gap-4 w-[90%]' action={submitFormUrl} method="POST">
-            <input className='h-12 rounded-lg bg-dark-blue border-purple border-2 pl-3' name='Name' type="text" placeholder="Name" required/>
+            <input className='h-12 rounded-lg bg-dark-blue border-purple border-2 pl-3' name='Name' type="text" placeholder="Name" required />
             <input className=' h-12 rounded-lg border-purple border-2 bg-dark-blue pl-3' name='Email' type="email" placeholder="Email" required />
             <textarea className=' h-32 rounded-lg border-purple border-2 bg-dark-blue p-3' name='Message' placeholder="Message" />
             <button type="submit" className="text-poppins mt-4 bg-blue text-dark-blue w-32 h-12 rounded-lg hover:scale-110 transition-transform hover:bg-yellow hover:translate-x-2">Submit</button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
