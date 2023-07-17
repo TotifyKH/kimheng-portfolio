@@ -54,22 +54,22 @@ const PhotoApp = () => {
             <img className='rounded-md border-2 border-purple' width='320px' src={photoAppImg3} />
           </div>
           <div className='md:ml-10 mt-5 md:mt-0  flex flex-col font-poppins justify-center'>
-            <h2 className=' text-yellow text-3xl'>Node Fit</h2>
-            <h2 className='text-xl'>A Full Stack Fitness App</h2>
+            <h2 className=' text-yellow text-3xl'>Photo App</h2>
+            <h2 className='text-xl'>A Photo Posting Application</h2>
             <div className='mt-4'>
               <p className='text-lg text-yellow'>Overview</p>
               <div className='pl-5'>
                 <ul className="list-disc">
-                  <li>Led the development of a workout application's backend using Express.js and deployed it on AWS.</li>
-                  <li>Implemented robust user session management for account creation, login, and workout customization.</li>
-                  <li>Collaborated effectively with a team to craft the ReactJS-based frontend, seamlessly integrating backend data.</li>
-                  <li>Gained comprehensive understanding of the software development lifecycle, encompassing documentation, testing, planning, and database design.</li>
+                  <li>Created my first full-stack web project, a photo app, with user account creation, photo posting, and comment functionality.</li>
+                  <li>Implemented user authentication, session management, and basic HTML/CSS to design an intuitive user interface.</li>
+                  <li>Utilized Node.js, Express.js, MySQL, and Handlebars for server-side development, gaining hands-on experience with routes and template language.</li>
+                  <li>Developed the application locally, serving as an introduction to web development and providing a solid foundation for future projects.</li>
                 </ul>
               </div>
               <p className='mt-5 text-lg text-yellow'>Technology</p>
-              <p>NodeJS, ExpressJS, MySQL, Session, AWS EC2, AWS RDS</p>
+              <p>HTML, CSS, NodeJS, ExpressJS, MySQL, Handlebars </p>
               <p className='mt-5 text-lg text-yellow'>Link</p>
-              <a href='https://docs.google.com/document/d/1Q_at0HnZfNOq3IssGkMxii56bL5OTIoDfD5Eu7bdmjw/edit' target="_blank" className="underline text-blue">Project Documentation<span><OpenInNewIcon fontSize='small' /> </span></a>
+              <a href='https://github.com/TotifyKH/Photo-App-Class-Project' target="_blank" className="underline text-blue">Project Repository<span><OpenInNewIcon fontSize='small' /> </span></a>
             </div>
           </div>
           <CloseIcon className='hover:cursor-pointer absolute top-3 right-3 ' onClick={handleClose} />
@@ -80,7 +80,7 @@ const PhotoApp = () => {
       </div>
 
       <div className='basis-1/2 flex flex-col justify-start px-5'>
-        <p className='text-lg font-poppins'><span className='text-yellow'>Photo App</span> - Photo Posting Applications</p>
+        <p className='text-lg font-poppins'><span className='text-yellow'>Photo App</span> - Photo Posting Application</p>
         <div className='flex flex-row flex-wrap justify-start text-start'>
           {photoHashTag.map((language, index) => (
             <div className="text-xs text-green m-0.5 py-0.5 pr-1 rounded-full" key={index}>{'#'}{language} {''}</div>
