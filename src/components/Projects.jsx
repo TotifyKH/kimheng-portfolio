@@ -66,7 +66,7 @@ const Projects = ({ setSelectedPage }) => {
           className="flex flex-col md:flex-row min-h-[20rem] my-3 gap-10 list-none"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.4 } : { amount: 0.1 }) }}
+          viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.3 } : { amount: 0.1 }) }}
           transition={{ duration: 1, ease: "easeOut" }}
           variants={list}
         >
@@ -83,7 +83,7 @@ const Projects = ({ setSelectedPage }) => {
           className="flex flex-col md:flex-row min-h-[20rem] my-3 gap-10 list-none"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.4 } : { amount: 0.1 }) }}
+          viewport={{ once: true, ...(isAboveMediumScreens ? { amount: 0.3 } : { amount: 0.1 }) }}
           transition={{ duration: 1, ease: "easeOut" }}
           variants={list}
         >

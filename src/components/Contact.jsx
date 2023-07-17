@@ -22,7 +22,7 @@ const Contact = ({ setSelectedPage }) => {
         className="flex flex-col md:flex-row items-center justify-center mt-10 p-1 bg-gradient-rainblue-2 rounded-md"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         variants={{
           hidden: { opacity: 0, y: 50 },
