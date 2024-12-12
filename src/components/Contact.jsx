@@ -32,8 +32,8 @@ const Contact = ({ setSelectedPage }) => {
         <div className="flex flex-col w-80 md:h-[35rem] items-start pl-10 bg-dark-purple md:rounded-l-md p-2">
           <p className="text-2xl mt-20 mb-6 font-poppins"><span className="text-yellow">Contact</span> Info</p>
           <p className="text-md mt-6 font-poppins">kimhengpengkh@gmail.com</p>
-          <p className="text-md mt-6 font-poppins">+1 (650) 438-7983</p>
-          <p className="text-md mt-6 font-poppins">San Francisco, CA</p>
+          <p className="text-md mt-6 font-poppins">+855 77 457 727</p>
+          <p className="text-md mt-6 font-poppins">Phnom Penh, Cambodia</p>
           <div className="flex justify-between gap-6 mt-12 mb-6">
             <a href="https://github.com/TotifyKH" target="_blank"><GitHubIcon className="hover:scale-125 transition-transform hover:cursor-pointer hover:text-yellow" /></a>
             <a href="https://www.linkedin.com/in/kimheng-peng/" target="_blank"><LinkedInIcon className="hover:scale-125 transition-transform hover:cursor-pointer hover:text-blue" /></a>
